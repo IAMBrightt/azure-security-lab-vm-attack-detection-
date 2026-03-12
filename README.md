@@ -60,8 +60,8 @@ Understanding how to query logs using languages like KQL, SQL, or SPL is an esse
 Step 8 – Enriching Logs with Geographic Data
 The security logs contain attacker IP addresses, but they do not include geographic information by default.
 To enrich the data, I imported a GeoIP dataset into Microsoft Sentinel as a Watchlist.
-Dataset used:
-https://raw.githubusercontent.com/joshmadakor1/lognpacific-public/refs/heads/main/misc/geoip-summarized.csv
+
+
 The watchlist contains thousands of IP address ranges mapped to geographic locations.
 After importing the dataset, it becomes possible to match attacker IP addresses to their approximate geographic origin.
 
@@ -104,4 +104,5 @@ Conclusion
 This project demonstrates how to build a simple cloud-based security monitoring environment using Microsoft Azure.
 By deploying a honeypot virtual machine and forwarding its logs into Microsoft Sentinel, it is possible to monitor authentication attempts, analyze security events, and visualize attacker activity across the internet.
 This type of setup reflects real-world security operations workflows used by SOC analysts and cloud security teams.
+
 
